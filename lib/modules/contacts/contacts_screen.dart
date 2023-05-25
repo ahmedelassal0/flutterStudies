@@ -1,14 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-class Contact {
-  Contact({
-    required this.name,
-    required this.phoneNumber,
-
-  });
-  final String name;
-  final String phoneNumber;
-}
+import '../../models/contact/contact_model.dart';
 List<Contact> contacts = [
   Contact(
       name: "Ahmad Elassal",

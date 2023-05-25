@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/CounterScreen.dart';
-import 'package:test_app/contacts_screen.dart';
-import 'package:test_app/home_screen.dart';
-import 'package:test_app/login_screen.dart';
-import 'package:test_app/messenger.dart';
+import 'package:test_app/modules/counter/counterScreen.dart';
+import 'package:test_app/modules/contacts/contacts_screen.dart';
+import 'package:test_app/modules/home/home_screen.dart';
+import 'package:test_app/modules/login/login_screen.dart';
+import 'package:test_app/modules/messenger/messenger.dart';
 
 void main() {
 
@@ -13,7 +13,7 @@ void main() {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(home: Counter(),
+    return MaterialApp(home: LoginScreen(),
     debugShowCheckedModeBanner: false,);
   }
  }
