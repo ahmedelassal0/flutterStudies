@@ -21,3 +21,32 @@ Widget regularButton({
     ),
   );
 }
+
+
+Widget regularTextFormField({
+  required controller,
+  var keyboardType,
+  required String text,
+  required IconData icon,
+  var validator,
+  IconData? suffix,
+  bool isPassword = false,
+  var suffixPress,
+}) {
+  return TextFormField(
+    controller: controller,
+    keyboardType: keyboardType != null ? keyboardType : null,
+    decoration: InputDecoration(
+      labelText: '$text',
+      border: OutlineInputBorder(),
+      prefixIcon: Icon(icon,
+      ),
+      suffixIcon: suffix != null? IconButton(
+          icon: Icon(suffix),
+        onPressed: suffixPress,
+      ) : null,
+    ),
+    validator: validator,
+    obscureText: isPassword,
+  );
+}
