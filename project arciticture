@@ -1,0 +1,6 @@
+Layout
+models
+modules
+shared -> components -> components.dart - constants.dart
+shared -> network -> local - remote
+styles -> colors.dart - styles.dart
